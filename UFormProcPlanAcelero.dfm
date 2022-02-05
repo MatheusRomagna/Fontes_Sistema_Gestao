@@ -1,0 +1,41 @@
+object FormProcPlanAcelero: TFormProcPlanAcelero
+  Left = 0
+  Top = 0
+  Caption = 'FormProcPlanAcelero'
+  ClientHeight = 465
+  ClientWidth = 869
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StringGridAcelero: TStringGrid
+    Left = 0
+    Top = 0
+    Width = 869
+    Height = 448
+    Align = alClient
+    FixedCols = 0
+    FixedRows = 0
+    TabOrder = 0
+    ExplicitLeft = 248
+    ExplicitTop = 136
+    ExplicitWidth = 320
+    ExplicitHeight = 120
+  end
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Top = 448
+    Width = 869
+    Height = 17
+    Align = alBottom
+    TabOrder = 1
+    ExplicitLeft = 368
+    ExplicitTop = 248
+    ExplicitWidth = 150
+  end
+end

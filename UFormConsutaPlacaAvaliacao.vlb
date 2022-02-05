@@ -1,0 +1,12 @@
+﻿[DataModuleRESTDWvistoria.qBuscaUsuariosRDW]
+Visible=False
+
+[DataModuleRESTDWvistoria.qBuscaFornecedores]
+Visible=False
+
+[FormGestaoVistoria.qBuscaVistoriasRDW]
+Visible=False
+
+[DataModuleBancoVistoria.qBuscaAvaliacoes]
+Visible=False
+

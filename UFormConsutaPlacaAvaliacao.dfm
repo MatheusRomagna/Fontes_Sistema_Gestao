@@ -1,0 +1,60 @@
+object FormConsultaPlacaAvaliacao: TFormConsultaPlacaAvaliacao
+  Left = 0
+  Top = 0
+  Caption = 'Consulta Placa Avaliacao'
+  ClientHeight = 208
+  ClientWidth = 512
+  Color = 8026746
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 19
+  object Label1: TLabel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 506
+    Height = 105
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Placa'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -64
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
+    ExplicitLeft = 0
+    ExplicitTop = 0
+    ExplicitWidth = 578
+  end
+  object EditConsultaPlacaAval: TEdit
+    AlignWithMargins = True
+    Left = 3
+    Top = 114
+    Width = 506
+    Height = 91
+    Align = alClient
+    Alignment = taCenter
+    BiDiMode = bdLeftToRight
+    BorderStyle = bsNone
+    CharCase = ecUpperCase
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -64
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentBiDiMode = False
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'Digite a placa'
+    OnKeyPress = EditConsultaPlacaAvalKeyPress
+  end
+end

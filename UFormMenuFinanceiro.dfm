@@ -1,0 +1,101 @@
+object FormMenuFinanceiro: TFormMenuFinanceiro
+  Left = 0
+  Top = 0
+  Caption = 'Menu Financeiro'
+  ClientHeight = 443
+  ClientWidth = 783
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -15
+  Font.Name = 'Verdana'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 18
+  object Panel1: TPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 777
+    Height = 91
+    Align = alTop
+    BevelOuter = bvNone
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Calibri'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    object btnPgtoVeiculos: TBitBtn
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 197
+      Height = 85
+      Align = alLeft
+      Caption = 'Pagamento de Ve'#237'culos'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = 170
+      Font.Height = -24
+      Font.Name = 'Calibri'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      WordWrap = True
+      OnClick = btnPgtoVeiculosClick
+      ExplicitTop = 6
+    end
+  end
+  object Panel2: TPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 100
+    Width = 777
+    Height = 91
+    Align = alTop
+    BevelOuter = bvNone
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Calibri'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    object btnPgtoTransportes: TBitBtn
+      AlignWithMargins = True
+      Left = 3
+      Top = 3
+      Width = 197
+      Height = 85
+      Align = alLeft
+      Caption = 'Pagamento de Transportes'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = 170
+      Font.Height = -24
+      Font.Name = 'Calibri'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      WordWrap = True
+      OnClick = btnPgtoTransportesClick
+    end
+  end
+  object Panel3: TPanel
+    AlignWithMargins = True
+    Left = 3
+    Top = 197
+    Width = 777
+    Height = 91
+    Align = alTop
+    BevelOuter = bvNone
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Calibri'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+end

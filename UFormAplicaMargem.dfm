@@ -1,0 +1,54 @@
+object FormAplicaMargem: TFormAplicaMargem
+  Left = 0
+  Top = 0
+  ClientHeight = 103
+  ClientWidth = 406
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 0
+    Top = 0
+    Width = 406
+    Height = 41
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Margem a aplicar'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
+  end
+  object EditMargem: TEdit
+    Left = 0
+    Top = 41
+    Width = 406
+    Height = 62
+    Align = alClient
+    Alignment = taCenter
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+    Text = '0,00'
+    OnKeyPress = EditMargemKeyPress
+    ExplicitHeight = 21
+  end
+end

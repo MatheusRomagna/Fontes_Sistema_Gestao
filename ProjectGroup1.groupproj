@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6812534A-8B00-42C9-B4C8-13A2499E44A2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SistemaGestaoSavauto.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\fmxtelas\FMXTelas.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SistemaGestaoSavauto">
+        <MSBuild Projects="SistemaGestaoSavauto.dproj"/>
+    </Target>
+    <Target Name="SistemaGestaoSavauto:Clean">
+        <MSBuild Projects="SistemaGestaoSavauto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SistemaGestaoSavauto:Make">
+        <MSBuild Projects="SistemaGestaoSavauto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FMXTelas">
+        <MSBuild Projects="..\fmxtelas\FMXTelas.dproj"/>
+    </Target>
+    <Target Name="FMXTelas:Clean">
+        <MSBuild Projects="..\fmxtelas\FMXTelas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FMXTelas:Make">
+        <MSBuild Projects="..\fmxtelas\FMXTelas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SistemaGestaoSavauto;FMXTelas"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SistemaGestaoSavauto:Clean;FMXTelas:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SistemaGestaoSavauto:Make;FMXTelas:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

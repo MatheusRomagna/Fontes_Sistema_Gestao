@@ -1,0 +1,57 @@
+object FormLoadingCarregamento: TFormLoadingCarregamento
+  Left = 0
+  Top = 0
+  BorderStyle = bsToolWindow
+  ClientHeight = 229
+  ClientWidth = 747
+  Color = 147
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblLoading: TLabel
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 741
+    Height = 54
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Loading...'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -29
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
+    ExplicitWidth = 731
+  end
+  object LblStatus: TLabel
+    AlignWithMargins = True
+    Left = 3
+    Top = 63
+    Width = 741
+    Height = 163
+    Align = alClient
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Aguardando Solicita'#231#227'o...'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -29
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Layout = tlCenter
+    ExplicitLeft = -2
+    ExplicitTop = 71
+    ExplicitWidth = 731
+    ExplicitHeight = 54
+  end
+end

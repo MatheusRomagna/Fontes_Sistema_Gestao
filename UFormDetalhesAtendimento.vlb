@@ -1,0 +1,9 @@
+﻿[DataModuleBancoVistoria.qBuscaAvaliacoes]
+Visible=False
+
+[FormParametros.UniTableParametros]
+Visible=False
+
+[DataModuleBancoVistoria.qConsultaFotosAvaliacao]
+Visible=False
+
